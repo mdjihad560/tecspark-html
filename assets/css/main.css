@@ -143,6 +143,7 @@
 
 .site-header--menu-right .menu-block {
   margin-left: auto;
+  margin-right: 70px;
 }
 
 @media (min-width: 992px) {
@@ -378,8 +379,8 @@
   .site-menu-main .nav-link-item {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
-    padding-left: 17px !important;
-    padding-right: 17px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -402,7 +403,7 @@
     box-shadow: -2px 2px 70px -25px rgb(0 0 0 / 30%);
     position: absolute;
     left: 0;
-    top: 102px;
+    top: 90px;
     margin: 0;
     padding: 12px 0;
     transition: .4s;
@@ -840,7 +841,7 @@
     align-items: center;
   }
   .site-menu-main i {
-    margin-left: 10px;
+    margin-left: 2px;
     font-size: 20px;
   }
 }

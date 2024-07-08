@@ -85,6 +85,25 @@
     /*--------------------------------------------------------------
     tecspark HERO SLIDER INIT
     --------------------------------------------------------------*/
+    /*----------- Custom Animaiton For Slider ----------*/
+
+    $('[data-ani-duration]').each(function () {
+      var durationTime = $(this).data('ani-duration');
+      $(this).css('animation-duration', durationTime);
+    });
+    $('[data-ani-delay]').each(function () {
+      var delayTime = $(this).data('ani-delay');
+      $(this).css('animation-delay', delayTime);
+    });
+    $('[data-ani]').each(function () {
+      var animaionName = $(this).data('ani');
+      $(this).addClass(animaionName);
+      $('.slick-slide [data-ani]').addClass('slider-animated');
+    });
+    $('.global-carousel').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+      $(slick.$slides).find('[data-ani]').removeClass('slider-animated');
+      $(slick.$slides[currentSlide]).find('[data-ani]').addClass('slider-animated');
+    });
     var hero_slider = $('.tecspark-hero-slider');
     if (hero_slider.is_exist()) {
       hero_slider.slick({
@@ -108,6 +127,86 @@
     if (four_column_slider.is_exist()) {
       four_column_slider.slick({
         infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: false,
+        centerMode: true,
+        centerPadding: '150px',
+        responsive: [{
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '100px'
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }, {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0px'
+          }
+        }]
+      });
+    }
+
+    /*--------------------------------------------------------------
+    tecspark FOUR COLUMN SLIDER INIT
+    --------------------------------------------------------------*/
+    var three_column_slider = $('.tecspark-3column-slider');
+    if (three_column_slider.is_exist()) {
+      three_column_slider.slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: false,
+        centerMode: true,
+        centerPadding: '100px',
+        responsive: [{
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 850,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '70px'
+          }
+        }, {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0px'
+          }
+        }]
+      });
+    }
+
+    /*--------------------------------------------------------------
+    tecspark FOUR COLUMN SLIDER INIT
+    --------------------------------------------------------------*/
+    var four_column_slider2 = $('.tecspark-4column-slider2');
+    if (four_column_slider2.is_exist()) {
+      four_column_slider2.slick({
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
@@ -119,16 +218,57 @@
             slidesToShow: 3
           }
         }, {
-          breakpoint: 992,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 2
           }
         }, {
-          breakpoint: 768,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1
           }
         }]
+      });
+    }
+
+    /*--------------------------------------------------------------
+    tecspark FOUR COLUMN SLIDER INIT
+    --------------------------------------------------------------*/
+    var two_column_slider = $('.tecspark-2column-slider');
+    if (two_column_slider.is_exist()) {
+      two_column_slider.slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: false,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    }
+
+    /*--------------------------------------------------------------
+    tecspark PORTFOLIO SLIDER INIT
+    --------------------------------------------------------------*/
+
+    var t_one_column_slider = $('.tecspark-1column-slider');
+    if (t_one_column_slider.is_exist()) {
+      t_one_column_slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+        speed: 800,
+        lazyLoad: 'progressive',
+        prevArrow: '<button class="slide-arrow tecspark-t-next"><i class="ri-arrow-left-s-line"></i></button>',
+        nextArrow: '<button class="slide-arrow tecspark-t-prev"><i class="ri-arrow-right-s-line"></i></button>'
       });
     }
 

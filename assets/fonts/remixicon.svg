@@ -77,4 +77,12 @@
             unicode="&#xEA60;"
             horiz-adv-x="1200" d="M391.4215 469.997H1000V369.997H391.4215L659.62 101.802L588.91 31.092L200 419.997L588.91 808.9079999999999L659.62 738.1975L391.4215 469.997z" /><glyph glyph-name="reply-fill"
             unicode="&#xF079;"
-            horiz-adv-x="1200" d="M600 20L100 420L600 820V570C876.14 570 1100 346.14 1100 70C1100 56.355 1099.455 42.835 1098.38 29.4649999999999C1023.025 172.49 872.8999999999999 270 700 270H600V20z" /></font></defs></svg>
+            horiz-adv-x="1200" d="M600 20L100 420L600 820V570C876.14 570 1100 346.14 1100 70C1100 56.355 1099.455 42.835 1098.38 29.4649999999999C1023.025 172.49 872.8999999999999 270 700 270H600V20z" /><glyph glyph-name="arrow-right-s-fill"
+            unicode="&#xEA6D;"
+            horiz-adv-x="1200" d="M750 420L450 120V720L750 420z" /><glyph glyph-name="arrow-down-s-fill"
+            unicode="&#xEA4D;"
+            horiz-adv-x="1200" d="M600 270L300 570H900L600 270z" /><glyph glyph-name="arrow-up-s-fill"
+            unicode="&#xEA77;"
+            horiz-adv-x="1200" d="M600 570L900 270H300L600 570z" /><glyph glyph-name="arrow-left-s-fill"
+            unicode="&#xEA63;"
+            horiz-adv-x="1200" d="M450 420L750 720V120L450 420z" /></font></defs></svg>
