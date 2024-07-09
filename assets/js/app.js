@@ -223,7 +223,7 @@
             slidesToShow: 2
           }
         }, {
-          breakpoint: 767,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1
           }
@@ -269,6 +269,32 @@
         lazyLoad: 'progressive',
         prevArrow: '<button class="slide-arrow tecspark-t-next"><i class="ri-arrow-left-s-line"></i></button>',
         nextArrow: '<button class="slide-arrow tecspark-t-prev"><i class="ri-arrow-right-s-line"></i></button>'
+      });
+    }
+
+    /*--------------------------------------------------------------
+    tecspark FOUR COLUMN SLIDER INIT
+    --------------------------------------------------------------*/
+    var three_column_slider2 = $('.tecspark-3column-slider2');
+    if (three_column_slider2.is_exist()) {
+      three_column_slider2.slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: false,
+        responsive: [{
+          breakpoint: 1299,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
       });
     }
 
