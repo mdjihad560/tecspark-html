@@ -6,24 +6,23 @@
   /*--------------------------------------------------------------
    [Table of contents]
   
-  tecspark PRELOADER JS INIT
-  tecspark HEADER SEARCH JS INIT
-  tecspark STICKY MENU JS INIT
-  tecspark MENU SIDEBAR JS INIT
-  tecspark SKILLBAR JS INIT
-  tecspark HERO SLIDER INIT
-  tecspark FOUR COLUMN SLIDER INIT
-  tecspark PORTFOLIO SLIDER INIT
-  tecspark PORTFOLIO SLIDER TWO INIT
-  tecspark TESTIMONIAL TWO COLUMN SLIDER INIT
-  tecspark TESTIMONIAL SLIDER INIT
-  tecspark BRAND SLIDER INIT
-  tecspark SIX COLUMN SLIDER INIT
-  tecspark COUNTER JS INIT
-  tecspark MAGNIFIC POPUP JS INIT
-  tecspark PORTFOLIO GRID FILTER JS
-  tecspark PORTFOLIO MASONAY FILTER JS
-  tecspark WOW JS
+  TECSPARK PRELOADER JS INIT
+  TECSPARK HEADER SEARCH JS INIT
+  TECSPARK STICKY MENU JS INIT
+  TECSPARK MENU SIDEBAR JS INIT
+  TECSPARK SKILLBAR JS INIT
+  TECSPARK HERO SLIDER INIT
+  TECSPARK FOUR COLUMN SLIDER INIT
+  TECSPARK THREE COLUMN SLIDER INIT
+  TECSPARK FOUR COLUMN SLIDER TWO INIT
+  TECSPARK TWO COLUMN SLIDER INIT
+  TECSPARK ONE COLUMN SLIDER INIT
+  TECSPARK THREE COLUMN SLIDER TWO INIT
+  TECSPARK BRAND SLIDER INIT
+  TECSPARK COUNTER JS INIT
+  TECSPARK COUNTER JS TWO INIT
+  TECSPARK MAP JS
+  TECSPARK WOW JS
    
   -------------------------------------------------------------------*/
 
@@ -36,20 +35,19 @@
   };
   $(function () {
     /*--------------------------------------------------------------
-    tecspark PRELOADER JS INIT
+    TECSPARK PRELOADER JS INIT
     --------------------------------------------------------------*/
-
     $(".tecspark-preloader-wrap").fadeOut(500);
 
     /*--------------------------------------------------------------
-    tecspark HEADER SEARCH JS INIT
+    TECSPARK HEADER SEARCH JS INIT
     ------------------------------------------------------------*/
     $(".tecspark-header-search, .tecspark-header-search-close, .search-overlay").click(function () {
       $(".tecspark-header-search-section, .search-overlay").toggleClass("open");
     });
 
     /*--------------------------------------------------------------
-    tecspark STICKY MENU JS INIT
+    TECSPARK STICKY MENU JS INIT
     --------------------------------------------------------------*/
     $(window).on('scroll', function () {
       if ($(window).scrollTop() > 50) {
@@ -60,7 +58,7 @@
     });
 
     /*--------------------------------------------------------------
-    tecspark MENU SIDEBAR JS INIT
+    TECSPARK MENU SIDEBAR JS INIT
     --------------------------------------------------------------*/
     $(".tecspark-header-barger").on("click", function (e) {
       $(".tecspark-sidemenu-column, .offcanvas-overlay").addClass("active");
@@ -71,7 +69,7 @@
     });
 
     /*--------------------------------------------------------------
-    tecspark SKILLBAR JS INIT
+    TECSPARK SKILLBAR JS INIT
     ------------------------------------------------------------*/
 
     var skillbar = $('.skillbar');
@@ -83,7 +81,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark HERO SLIDER INIT
+    TECSPARK HERO SLIDER INIT
     --------------------------------------------------------------*/
     /*----------- Custom Animaiton For Slider ----------*/
 
@@ -121,7 +119,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark FOUR COLUMN SLIDER INIT
+    TECSPARK FOUR COLUMN SLIDER INIT
     --------------------------------------------------------------*/
     var four_column_slider = $('.tecspark-4column-slider');
     if (four_column_slider.is_exist()) {
@@ -166,7 +164,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark FOUR COLUMN SLIDER INIT
+    TECSPARK THREE COLUMN SLIDER INIT
     --------------------------------------------------------------*/
     var three_column_slider = $('.tecspark-3column-slider');
     if (three_column_slider.is_exist()) {
@@ -201,7 +199,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark FOUR COLUMN SLIDER INIT
+    TECSPARK FOUR COLUMN SLIDER TWO INIT
     --------------------------------------------------------------*/
     var four_column_slider2 = $('.tecspark-4column-slider2');
     if (four_column_slider2.is_exist()) {
@@ -232,7 +230,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark FOUR COLUMN SLIDER INIT
+    TECSPARK TWO COLUMN SLIDER INIT
     --------------------------------------------------------------*/
     var two_column_slider = $('.tecspark-2column-slider');
     if (two_column_slider.is_exist()) {
@@ -253,9 +251,8 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark PORTFOLIO SLIDER INIT
+    TECSPARK ONE COLUMN SLIDER INIT
     --------------------------------------------------------------*/
-
     var t_one_column_slider = $('.tecspark-1column-slider');
     if (t_one_column_slider.is_exist()) {
       t_one_column_slider.slick({
@@ -273,7 +270,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark FOUR COLUMN SLIDER INIT
+    TECSPARK THREE COLUMN SLIDER TWO INIT
     --------------------------------------------------------------*/
     var three_column_slider2 = $('.tecspark-3column-slider2');
     if (three_column_slider2.is_exist()) {
@@ -299,110 +296,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark PORTFOLIO SLIDER INIT
-    --------------------------------------------------------------*/
-    var p_slider = $('.tecspark-portfolio-slider');
-    if (p_slider.is_exist()) {
-      p_slider.slick({
-        infinite: true,
-        slidesToShow: 3.7,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        autoplay: false,
-        responsive: [{
-          breakpoint: 1499,
-          settings: {
-            slidesToShow: 2.7
-          }
-        }, {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 2.2
-          }
-        }, {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1.5
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
-      });
-    }
-
-    /*--------------------------------------------------------------
-    tecspark PORTFOLIO SLIDER TWO INIT
-    --------------------------------------------------------------*/
-    var p_slider = $('.tecspark-portfolio-slider2');
-    if (p_slider.is_exist()) {
-      p_slider.slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        autoplay: false,
-        responsive: [{
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
-      });
-    }
-
-    /*--------------------------------------------------------------
-    tecspark TESTIMONIAL TWO COLUMN SLIDER INIT
-    --------------------------------------------------------------*/
-    var t_t_slider = $('.tecspark-t-two-column-slider');
-    if (t_t_slider.is_exist()) {
-      t_t_slider.slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        autoplay: false,
-        speed: 800,
-        prevArrow: '<button class="slide-arrow tecspark-t-next"><i class="ri-arrow-left-s-line"></i></button>',
-        nextArrow: '<button class="slide-arrow tecspark-t-prev"><i class="ri-arrow-right-s-line"></i></button>'
-      });
-    }
-
-    /*--------------------------------------------------------------
-    tecspark TESTIMONIAL SLIDER INIT
-    --------------------------------------------------------------*/
-    var t_t_slider = $('.tecspark-testimonial-slider');
-    if (t_t_slider.is_exist()) {
-      t_t_slider.slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        autoplay: false,
-        speed: 800,
-        prevArrow: '<button class="slide-arrow tecspark-t-next"><i class="ri-arrow-left-s-line"></i></button>',
-        nextArrow: '<button class="slide-arrow tecspark-t-prev"><i class="ri-arrow-right-s-line"></i></button>'
-      });
-    }
-
-    /*--------------------------------------------------------------
-    tecspark BRAND SLIDER INIT
+    TECSPARK BRAND SLIDER INIT
     --------------------------------------------------------------*/
     var tecspark_brand_slider = $('.tecspark-brand-slider');
     if (tecspark_brand_slider.is_exist()) {
@@ -433,48 +327,7 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark SIX COLUMN SLIDER INIT
-    --------------------------------------------------------------*/
-    var p_slider = $('.tecspark-six-column-slider');
-    if (p_slider.is_exist()) {
-      p_slider.slick({
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        autoplay: false,
-        responsive: [{
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 4
-          }
-        }, {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 3
-          }
-        }, {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
-      });
-    }
-
-    /*--------------------------------------------------------------
-    tecspark COUNTER JS INIT
+    TECSPARK COUNTER JS INIT
     --------------------------------------------------------------*/
     var tecspark_counter = $('#tecspark-counter');
     if (tecspark_counter.is_exist()) {
@@ -506,169 +359,44 @@
     }
 
     /*--------------------------------------------------------------
-    tecspark MAGNIFIC POPUP JS INIT
-    ------------------------------------------------------------*/
-    var popup_youtube = $('.video-init');
-    if (popup_youtube.is_exist()) {
-      popup_youtube.magnificPopup({
-        type: 'iframe',
-        mainClass: 'mfp-fade'
+    TECSPARK COUNTER JS TWO INIT
+    --------------------------------------------------------------*/
+    var tecspark_counter2 = $('#tecspark-counter2');
+    if (tecspark_counter2.is_exist()) {
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $(tecspark_counter2).offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          $('.tecspark-counter2').each(function () {
+            var $this = $(this),
+              countTo = $this.attr('data-percentage');
+            $({
+              countNum: $this.text()
+            }).animate({
+              countNum: countTo
+            }, {
+              duration: 4000,
+              easing: 'swing',
+              step: function step() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function complete() {
+                $this.text(this.countNum);
+              }
+            });
+          });
+          a = 1;
+        }
       });
     }
   }); /*End document ready*/
 
   $(window).on("resize", function () {}); // end window resize
 
-  $(window).on("load", function () {
-    /*--------------------------------------------------------------
-    tecspark PORTFOLIO GRID FILTER JS
-    ------------------------------------------------------------*/
-    var tecspark_filter_gallery = $('#tecspark-portfolio-grid');
-    if (tecspark_filter_gallery.is_exist()) {
-      var $container = $(tecspark_filter_gallery),
-        colWidth = function colWidth() {
-          var w = $container.width(),
-            columnNum = 1,
-            columnWidth = 0;
-          if (w > 1200) {
-            columnNum = 3;
-          } else if (w > 900) {
-            columnNum = 3;
-          } else if (w > 600) {
-            columnNum = 2;
-          } else if (w > 450) {
-            columnNum = 1;
-          } else if (w > 385) {
-            columnNum = 1;
-          }
-          columnWidth = Math.floor(w / columnNum);
-          $container.find('.collection-grid-item').each(function () {
-            var $item = $(this),
-              multiplier_w = $item.attr('class').match(/collection-grid-item-w(\d)/),
-              multiplier_h = $item.attr('class').match(/collection-grid-item-h(\d)/),
-              width = multiplier_w ? columnWidth * multiplier_w[1] : columnWidth,
-              height = multiplier_h ? columnWidth * multiplier_h[1] * 0.4 - 12 : columnWidth * 0.5;
-            $item.css({
-              width: width
-              //height: height
-            });
-          });
-          return columnWidth;
-        },
-        isotope = function isotope() {
-          $container.isotope({
-            resizable: false,
-            itemSelector: '.collection-grid-item',
-            masonry: {
-              columnWidth: colWidth(),
-              gutterWidth: 0
-            }
-          });
-        };
-      isotope();
-      $(window).resize(isotope);
-      var $optionSets = $('.tecspark-portfolio-menu .option-set'),
-        $optionLinks = $optionSets.find('li');
-      $optionLinks.click(function () {
-        var $this = $(this);
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.active').removeClass('active');
-        $this.addClass('active');
-
-        // make option object dynamically, i.e. { filter: '.my-filter-class' }
-        var options = {},
-          key = $optionSet.attr('data-option-key'),
-          value = $this.attr('data-option-value');
-        // parse 'false' as false boolean
-        value = value === 'false' ? false : value;
-        options[key] = value;
-        if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
-          // changes in layout modes need extra logic
-          changeLayoutMode($this, options);
-        } else {
-          // creativewise, apply new options
-          $container.isotope(options);
-        }
-        return false;
-      });
-    }
-
-    /*--------------------------------------------------------------
-    tecspark PORTFOLIO MASONAY FILTER JS
-    ------------------------------------------------------------*/
-    var tecspark_gallery_masonay = $('#tecspark-portfolio-masonay');
-    if (tecspark_gallery_masonay.is_exist()) {
-      var $container = $(tecspark_gallery_masonay),
-        colWidth = function colWidth() {
-          var w = $container.width(),
-            columnNum = 1,
-            columnWidth = 0;
-          if (w > 1200) {
-            columnNum = 3;
-          } else if (w > 900) {
-            columnNum = 3;
-          } else if (w > 600) {
-            columnNum = 2;
-          } else if (w > 450) {
-            columnNum = 1;
-          } else if (w > 385) {
-            columnNum = 1;
-          }
-          columnWidth = Math.floor(w / columnNum);
-          $container.find('.collection-grid-item').each(function () {
-            var $item = $(this),
-              multiplier_w = $item.attr('class').match(/collection-grid-item-w(\d)/),
-              multiplier_h = $item.attr('class').match(/collection-grid-item-h(\d)/),
-              width = multiplier_w ? columnWidth * multiplier_w[1] : columnWidth,
-              height = multiplier_h ? columnWidth * multiplier_h[1] * 0.4 - 12 : columnWidth * 0.5;
-            $item.css({
-              width: width
-              // height: height
-            });
-          });
-          return columnWidth;
-        },
-        isotope = function isotope() {
-          $container.isotope({
-            resizable: false,
-            itemSelector: '.collection-grid-item',
-            masonry: {
-              columnWidth: colWidth(),
-              gutterWidth: 0
-            }
-          });
-        };
-      isotope();
-      $(window).resize(isotope);
-      var $optionSets = $('.tecspark-portfolio-menu .option-set'),
-        $optionLinks = $optionSets.find('li');
-      $optionLinks.click(function () {
-        var $this = $(this);
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
-
-        // make option object dynamically, i.e. { filter: '.my-filter-class' }
-        var options = {},
-          key = $optionSet.attr('data-option-key'),
-          value = $this.attr('data-option-value');
-        // parse 'false' as false boolean
-        value = value === 'false' ? false : value;
-        options[key] = value;
-        if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
-          // changes in layout modes need extra logic
-          changeLayoutMode($this, options);
-        } else {
-          // creativewise, apply new options
-          $container.isotope(options);
-        }
-        return false;
-      });
-    }
-  }); // End window LODE
+  $(window).on("load", function () {}); // End window LODE
 
   /*--------------------------------------------------------------
-  tecspark MAP JS
+  TECSPARK MAP JS
   ------------------------------------------------------------*/
   var google_map = $('#map');
   if (google_map.is_exist()) {
@@ -800,7 +528,7 @@
   }
 
   /*--------------------------------------------------------------
-  tecspark WOW JS
+  TECSPARK WOW JS
   ------------------------------------------------------------*/
   var wow = new WOW({
     mobile: false,
