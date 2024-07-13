@@ -69,18 +69,6 @@
     });
 
     /*--------------------------------------------------------------
-    TECSPARK SKILLBAR JS INIT
-    ------------------------------------------------------------*/
-
-    var skillbar = $('.skillbar');
-    if (skillbar.is_exist()) {
-      skillbar.skillBars({
-        speed: 8000,
-        interval: 100
-      });
-    }
-
-    /*--------------------------------------------------------------
     TECSPARK HERO SLIDER INIT
     --------------------------------------------------------------*/
     /*----------- Custom Animaiton For Slider ----------*/
@@ -263,7 +251,6 @@
         dots: false,
         autoplay: false,
         speed: 800,
-        lazyLoad: 'progressive',
         prevArrow: '<button class="slide-arrow tecspark-t-next"><i class="ri-arrow-left-s-line"></i></button>',
         nextArrow: '<button class="slide-arrow tecspark-t-prev"><i class="ri-arrow-right-s-line"></i></button>'
       });
@@ -313,7 +300,7 @@
         pauseOnHover: true,
         adaptiveHeight: true,
         responsive: [{
-          breakpoint: 991,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 3
           }
