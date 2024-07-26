@@ -2,12 +2,12 @@
 
 
 // ScrollSmoother.create({
-//   content: ".tecspark-smooth-scroll",
+//   content: ".optech-smooth-scroll",
 //   smooth: 1
 // });
 
 // const body = document.body,
-//   jsScroll = document.getElementsByClassName("tecspark-smooth-scroll")[0],
+//   jsScroll = document.getElementsByClassName("optech-smooth-scroll")[0],
 //   height = jsScroll.getBoundingClientRect().height - 1,
 //   speed = 0.05;
 

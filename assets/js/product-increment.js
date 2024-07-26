@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.tecspark-product-minus').click(function () {
+  $('.optech-product-minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
     count = count < 1 ? 1 : count;
@@ -7,7 +7,7 @@ $(document).ready(function() {
     $input.change();
     return false;
   });
-  $('.tecspark-product-plus').click(function () {
+  $('.optech-product-plus').click(function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
